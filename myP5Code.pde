@@ -5,7 +5,7 @@ void setup() {
 
 //🎯Varaible Declarations Go Here
 var x = 200;
-var y = 100;
+var y = 200;
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
@@ -17,14 +17,26 @@ void draw(){
   fill(30, 204, 91); // a nice froggy green!
 
   ellipse(x, y, 200, 100); // face
+  
   ellipse(x - 50, y - 50, 40, 40); // left eye socket
   ellipse(x + 50, y - 50, 40, 40); // right eye socket
 
   fill(255, 255, 255); // for the whites of the eyes!
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
-  
 
+fill(255,0,0); //mouth
+ellipse(x, y + 5, 30, 20); 
+
+fill (0,0,0); //eyeballs
+ellipse(x + 50, y - 50, 15, 15);
+ellipse(x - 50, y - 50, 15, 15);
+
+fill (255, 198, 198); //blush
+ellipse(x + 55, y - 20, 25, 20)
+ellipse(x - 55, y - 20, 25, 20)
+
+X = mouse
 }
 
 
